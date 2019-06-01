@@ -6,11 +6,14 @@
              mc:Ignorable="d"
              x:Class="DAAD.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Orange" Padding="20 40 20 40">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center"/>
+        <Image Source="correios.png"/>
+        <Entry x:Name="ent" Placeholder="Digite o Cep." PlaceholderColor="Orange" BackgroundColor="White"/>
+        <Button x:Name="but" Text="Buscar CEP" TextColor="White" BackgroundColor="DarkBlue"/>
+        <Label x:Name="lab" Text="" VerticalOptions="Center" HorizontalOptions="Center"/>
+
     </StackLayout>
 
 </ContentPage>
