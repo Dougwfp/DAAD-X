@@ -90,7 +90,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\free.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAAD\DAAD.csproj">
       <Project>{0BDF3979-DC91-441B-B7AE-8CBAD5216682}</Project>
