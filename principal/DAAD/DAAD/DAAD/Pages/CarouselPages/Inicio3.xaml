@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAAD.Pages.CarouselPages.Inicio3"
+             BackgroundColor="SkyBlue">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" >
+            <Label Text="Nossas funçoes no aplicativo incluem: etc..." FontSize="Medium"
+                
+                HorizontalOptions="CenterAndExpand" />
+            <ImageButton Source="cursor.png" Clicked="MudarPagina" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

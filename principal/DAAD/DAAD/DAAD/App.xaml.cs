@@ -10,7 +10,7 @@ namespace DAAD
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Pages.CarouselPages.CarouselInicio();
         }
 
         protected override void OnStart()

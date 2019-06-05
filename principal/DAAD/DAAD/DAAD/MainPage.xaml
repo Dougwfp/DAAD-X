@@ -7,7 +7,13 @@
              x:Class="DAAD.MainPage">
 
     <StackLayout BackgroundColor="Orange" Padding="10" Spacing="10">
-        
+        <!-- credito ao autor dos icones <div>Ícones feitos por
+            <a href="https://br.flaticon.com/autores/chanut" title="Chanut">Chanut</a> from
+            <a href="https://br.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> é licenciado por
+            <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>-->
+
+
     </StackLayout>
 
 </ContentPage>

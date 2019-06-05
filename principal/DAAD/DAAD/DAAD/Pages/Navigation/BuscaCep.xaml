@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAAD.BuscaCep"
+             Title="ViaCEP">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Orange" Padding="10" Spacing="10">
+            <!-- Place new controls here -->
+
+            <Image Source="correios.png"/>
+            <Entry x:Name="ent" Placeholder="Digite o Cep." PlaceholderColor="Orange" BackgroundColor="White"/>
+            <Button x:Name="but" Text="Buscar CEP" TextColor="White" BackgroundColor="DarkBlue"/>
+            <Label x:Name="lab" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" MaxLines="3" HorizontalTextAlignment="Center" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

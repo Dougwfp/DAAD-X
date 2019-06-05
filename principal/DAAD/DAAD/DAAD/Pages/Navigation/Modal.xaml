@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAAD.Pages.Navigation.Modal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HeightRequest="50" BackgroundColor="Blue">
+                <Label Text="titulo modal" TextColor="White"/>
+                <Button Text="X" Clicked="FecharModal" HorizontalOptions="End"/>
+            </StackLayout>
+            <Label Text="Olha o modal ai gente!!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
