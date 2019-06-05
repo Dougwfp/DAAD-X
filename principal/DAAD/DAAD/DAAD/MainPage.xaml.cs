@@ -19,22 +19,10 @@ namespace DAAD
         {
             InitializeComponent();
 
-            but.Clicked += BuscarCEP;
+            
 
         }
-        private void BuscarCEP(object s, EventArgs args)
-        {
-            // logica do programa
-
-
-            // validaçoes
-
-            string cep = ent.Text.Trim();
-            Usuario usu = ViaCEPServico.BuscarEnderecoViaCEP(cep);
-
-            lab.Text = string.Format("Endereço: {0}, {1}, {2}", usu.estado, usu.cidade, usu.bairro);
-
-        }
+        
         
     }
 }
