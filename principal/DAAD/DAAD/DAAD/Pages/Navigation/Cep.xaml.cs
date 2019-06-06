@@ -9,15 +9,14 @@ using Xamarin.Forms.Xaml;
 using DAAD.Service.Model;
 using DAAD.Service;
 
-namespace DAAD
+namespace DAAD.Pages.Navigation
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BuscaCep : ContentPage
+	public partial class Cep : ContentPage
 	{
-		public BuscaCep ()
+		public Cep ()
 		{
 			InitializeComponent ();
-
             but.Clicked += BuscarCEP;
         }
 
@@ -72,6 +71,5 @@ namespace DAAD
 
             return valido;
         }
-
     }
 }

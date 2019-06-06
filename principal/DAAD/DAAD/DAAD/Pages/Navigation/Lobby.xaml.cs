@@ -21,9 +21,9 @@ namespace DAAD.Pages.Navigation
             Navigation.PushAsync(new Sobre());
             
         }
-        private void IrParaBuscaCep(object sender, EventArgs args)
+        private void IrParaCep(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new BuscaCep());
+            Navigation.PushAsync(new Cep());
 
         }
 

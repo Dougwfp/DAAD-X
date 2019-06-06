@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menu="clr-namespace:DAAD.Pages.Master"
+             x:Class="DAAD.Pages.Master.MenuLateral">
+    <MasterDetailPage.Master>
+        <!--Menu-->
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarCep"/>
+                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarMapa"/>
+                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarChat"/>
+                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarConta"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <!--Conteudo-->
+        <menu:Conteudo/>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
