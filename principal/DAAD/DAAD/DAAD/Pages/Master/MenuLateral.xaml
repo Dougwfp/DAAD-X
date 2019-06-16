@@ -6,18 +6,24 @@
     <MasterDetailPage.Master>
         <!--Menu-->
         <ContentPage Title="Menu">
-            <StackLayout>
-                <Button Text="Chat" BackgroundColor="Transparent" Clicked="MenuChat" />
-                <Button Text="Conta" BackgroundColor="Transparent" Clicked="MenuConta" />
-                <Button Text="Mapa" BackgroundColor="Transparent" Clicked="MenuMapa" />
-                <Button Text="Tarefa" BackgroundColor="Transparent" Clicked="MenuTarefa" />
-                <Button Text="Principal" BackgroundColor="Transparent" Clicked="MenuPrincipal" />
-                <Button Text="Sobre" BackgroundColor="Transparent" Clicked="MenuSobre" />
-            </StackLayout>
+            <ScrollView Orientation="Vertical">
+                <StackLayout>
+                    <Button Text="Chat" BackgroundColor="Transparent" Clicked="MenuChat" />
+                    <Button Text="Conta" BackgroundColor="Transparent" Clicked="MenuConta" />
+                    <Button Text="Mapa" BackgroundColor="Transparent" Clicked="MenuMapa" />
+                    <Button Text="Tarefa" BackgroundColor="Transparent" Clicked="MenuTarefa" />
+                    <Button Text="Principal" BackgroundColor="Transparent" Clicked="MenuPrincipal" />
+                    <Button Text="Sobre" BackgroundColor="Transparent" Clicked="MenuSobre" />
+                </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <menu:Principal/>
+        <NavigationPage>
+            <x:Arguments>
+                <menu:Principal/>
+            </x:Arguments>
+        </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

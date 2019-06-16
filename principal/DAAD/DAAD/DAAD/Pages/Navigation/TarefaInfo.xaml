@@ -6,7 +6,7 @@
         <StackLayout>
             <Label Text="Informaçoes sobre o desempenho do usuario quanto as tarefas."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" /> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

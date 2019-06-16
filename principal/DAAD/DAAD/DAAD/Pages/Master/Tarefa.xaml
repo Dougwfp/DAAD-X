@@ -4,12 +4,14 @@
              x:Class="DAAD.Pages.Master.Tarefa"
              Title="Tarefas">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Informaçoes sobre Tarefas" Clicked="ModalInfo"/>
-            <Label Text="Lista de tarefas para o usuario."
+        <ScrollView Orientation="Vertical">
+            <StackLayout HeightRequest="1000">
+                <Button Text="Informaçoes sobre Tarefas" Clicked="ModalInfo"/>
+                <Label Text="Lista de tarefas para o usuario."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Modal" Clicked="ModalFazer"/>
-        </StackLayout>
+                <Button Text="Modal" Clicked="ModalFazer"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -30,6 +30,7 @@ namespace DAAD.Pages.CarouselPages
         {
             App.Current.MainPage = new Master.MenuLateral(); 
 
+
         }
 
     }

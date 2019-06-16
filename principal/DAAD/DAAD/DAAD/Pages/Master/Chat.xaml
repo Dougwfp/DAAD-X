@@ -4,12 +4,14 @@
              x:Class="DAAD.Pages.Master.Chat"
              Title="Chat">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Sala de Chat" Clicked="NavSala"/>
-            <Label Text="Lista de usuarios para entrar em chat."
+        <ScrollView Orientation="Vertical">
+            <StackLayout HeightRequest="1000">
+                <Button Text="Sala de Chat" Clicked="NavSala"/>
+                <Label Text="Lista de usuarios para entrar em chat."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Modal" Clicked="ModalPerfil"/>
-        </StackLayout>
+                <Button Text="Modal" Clicked="ModalPerfil"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

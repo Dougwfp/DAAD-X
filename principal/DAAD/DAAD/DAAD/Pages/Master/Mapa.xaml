@@ -4,10 +4,12 @@
              x:Class="DAAD.Pages.Master.Mapa"
              Title="Mapa">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="GoogleMaps" Clicked="NavGoogleMaps"/>
-            <Button Text="CEP" Clicked="NavCEP"/>
-            <Label Text="aqui vai ficar a lista de postos por proximidade."/>
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout HeightRequest="1000">
+                <Button Text="GoogleMaps" Clicked="NavGoogleMaps"/>
+                <Button Text="CEP" Clicked="NavCEP"/>
+                <Label Text="aqui vai ficar a lista de postos por proximidade."/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
