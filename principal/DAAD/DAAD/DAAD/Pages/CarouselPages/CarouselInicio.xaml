@@ -4,7 +4,7 @@
              xmlns:inicio="clr-namespace:DAAD.Pages.CarouselPages"
              x:Class="DAAD.Pages.CarouselPages.CarouselInicio">
     <inicio:Inicio1/>
-    <inicio:Inicio3/>
     <inicio:Inicio2/>
+    <inicio:Inicio3/>
 
 </CarouselPage>

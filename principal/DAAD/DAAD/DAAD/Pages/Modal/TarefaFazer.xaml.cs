@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DAAD.Pages.Navigation
+namespace DAAD.Pages.Modal
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Sobre : ContentPage
+	public partial class TarefaFazer : ContentPage
 	{
-		public Sobre ()
+		public TarefaFazer ()
 		{
 			InitializeComponent ();
 		}
-	}
+        private void FecharModal(object sender, EventArgs arsg)
+        {
+            Navigation.PopModalAsync();
+        }
+    }
 }

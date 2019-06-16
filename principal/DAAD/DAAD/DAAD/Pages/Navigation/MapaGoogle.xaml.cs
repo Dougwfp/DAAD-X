@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DAAD.Pages.Master
+namespace DAAD.Pages.Navigation
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Conteudo : ContentPage
+	public partial class MapaGoogle : ContentPage
 	{
-		public Conteudo ()
+		public MapaGoogle ()
 		{
 			InitializeComponent ();
 		}

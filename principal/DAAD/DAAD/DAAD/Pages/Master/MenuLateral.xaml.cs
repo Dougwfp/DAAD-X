@@ -17,22 +17,36 @@ namespace DAAD.Pages.Master
 			InitializeComponent ();
 		}
 
-        private void MudarCep(object sender, EventArgs args)
+        private void MenuChat(object sender, EventArgs args)
         {
-            Detail = new Navigation.Cep();
+            Detail = new NavigationPage( new Chat());
             IsPresented = false;
         }
-        private void MudarMapa(object sender, EventArgs args)
+        private void MenuConta(object sender, EventArgs args)
         {
-
+            Detail = new NavigationPage(new Conta());
+            IsPresented = false;
         }
-        private void MudarChat(object sender, EventArgs args)
+        private void MenuMapa(object sender, EventArgs args)
         {
-
+            Detail = new NavigationPage(new Mapa());
+            IsPresented = false;
         }
-        private void MudarConta(object sender, EventArgs args)
+        private void MenuTarefa(object sender, EventArgs args)
         {
-
+            Detail = new NavigationPage(new Tarefa());
+            IsPresented = false;
         }
+        private void MenuPrincipal(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Principal());
+            IsPresented = false;
+        }
+        private void MenuSobre(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Sobre());
+            IsPresented = false;
+        }
+
     }
 }

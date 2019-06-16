@@ -7,16 +7,17 @@
         <!--Menu-->
         <ContentPage Title="Menu">
             <StackLayout>
-                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarCep"/>
-                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarMapa"/>
-                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarChat"/>
-                <ImageButton Source="" BackgroundColor="Transparent" Clicked="MudarConta"/>
+                <Button Text="Chat" BackgroundColor="Transparent" Clicked="MenuChat" />
+                <Button Text="Conta" BackgroundColor="Transparent" Clicked="MenuConta" />
+                <Button Text="Mapa" BackgroundColor="Transparent" Clicked="MenuMapa" />
+                <Button Text="Tarefa" BackgroundColor="Transparent" Clicked="MenuTarefa" />
+                <Button Text="Principal" BackgroundColor="Transparent" Clicked="MenuPrincipal" />
+                <Button Text="Sobre" BackgroundColor="Transparent" Clicked="MenuSobre" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <!--Conteudo-->
-        <menu:Conteudo/>
+        <menu:Principal/>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

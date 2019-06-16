@@ -7,29 +7,29 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DAAD.Pages.Navigation
+namespace DAAD.Pages.Master
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Lobby : ContentPage
+	public partial class Principal : ContentPage
 	{
-		public Lobby ()
+		public Principal ()
 		{
 			InitializeComponent ();
 		}
         private void IrParaSobre(object sender, EventArgs args)
         {
+            Navigation.PushAsync(new Sobre());
 
-            
         }
         private void IrParaCep(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new Cep());
+            Navigation.PushAsync(new Navigation.Cep());
 
         }
 
         private void ChamarModal(object sender, EventArgs args)
         {
-            Navigation.PushModalAsync(new Modal());
+            Navigation.PushModalAsync(new Modal.ContaEdiReg());
 
         }
     }

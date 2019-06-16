@@ -26,6 +26,11 @@ namespace DAAD.Pages.CarouselPages
             App.Current.MainPage = new Tabbed.Abas();
 
         }
+        private void MudarPaginaMenu(object sender, EventArgs args)
+        {
+            App.Current.MainPage = new Master.MenuLateral(); 
+
+        }
 
     }
 }
