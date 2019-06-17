@@ -26,5 +26,10 @@ namespace DAAD.Pages.Master
             Navigation.PushAsync(new Navigation.Cep());
 
         }
+        private void RotaGoogleMaps(object sender, EventArgs args)
+        {
+            Picker obj = (Picker)sender;
+            local.Text = obj.SelectedItem.ToString();
+        }
     }
 }

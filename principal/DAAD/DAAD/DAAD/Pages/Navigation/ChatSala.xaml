@@ -7,6 +7,15 @@
             <Label Text="Sala de bate papo com o usuario escolhido."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+            <Label Text="Data" x:Name="data"/>
+            <Label Text="Hora" x:Name="hora"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <DatePicker Format="dd/MM/yyyy" MinimumDate="01/01/1900" Date="01/01/1950" DateSelected="DataSelecionada"/>
+                <TimePicker Format="HH:mm" Time="12:30"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -20,5 +20,6 @@ namespace DAAD.Pages.Modal
         {
             Navigation.PopModalAsync();
         }
+        
     }
 }

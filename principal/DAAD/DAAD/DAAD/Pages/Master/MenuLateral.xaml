@@ -14,6 +14,8 @@
                     <Button Text="Tarefa" BackgroundColor="Transparent" Clicked="MenuTarefa" />
                     <Button Text="Principal" BackgroundColor="Transparent" Clicked="MenuPrincipal" />
                     <Button Text="Sobre" BackgroundColor="Transparent" Clicked="MenuSobre" />
+                    <Button Text="Depoimentos" BackgroundColor="Transparent" Clicked="MenuDepo" />
+                    <Button Text="Carregando" BackgroundColor="Transparent" Clicked="MenuCarregando" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

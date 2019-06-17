@@ -8,7 +8,7 @@
             <Label Text="Nossas funçoes no aplicativo incluem: etc..." FontSize="Medium"
                 
                 HorizontalOptions="CenterAndExpand" />
-            <ImageButton Source="cursor.png" Clicked="MudarPaginaMenu" BackgroundColor="Transparent"/>
+            <ImageButton Source="cursor.png" HeightRequest="100" WidthRequest="100" Clicked="MudarPaginaMenu" BackgroundColor="Transparent"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

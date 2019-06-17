@@ -16,5 +16,10 @@ namespace DAAD.Pages.Navigation
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void DataSelecionada(object sender, DateChangedEventArgs args)
+        {
+            data.Text = args.OldDate.ToString("dd/MM/yyyy") + " - " + args.NewDate.ToString("dd/MM/yyyy");
+        }
+    }
 }
