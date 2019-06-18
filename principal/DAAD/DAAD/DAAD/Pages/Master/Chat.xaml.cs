@@ -25,5 +25,16 @@ namespace DAAD.Pages.Master
             Navigation.PushAsync(new Navigation.ChatSala());
 
         }
+        private void MudarAlerta(object sender, ToggledEventArgs args)
+        {
+            if(args.Value == true)
+            {
+                lAlert.Text = "Modo Alerta Ativado!! - " + DateTime.Now.ToString("HH:mm:ss");
+            }
+            else
+            {
+                lAlert.Text = "Modo Alerta Desativado."; 
+            }
+        }
     }
 }

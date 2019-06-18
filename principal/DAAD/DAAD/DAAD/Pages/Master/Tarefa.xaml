@@ -6,11 +6,22 @@
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
             <StackLayout HeightRequest="1000">
-                <Button Text="Informaçoes sobre Tarefas" Clicked="ModalInfo"/>
-                <Label Text="Lista de tarefas para o usuario."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-                <Button Text="Modal" Clicked="ModalFazer"/>
+                
+                <StackLayout>
+                    <Button Text="Informaçoes sobre Tarefas" Clicked="ModalInfo"/>
+                    <Button Text="Modal" Clicked="ModalFazer"/>
+                </StackLayout>
+                
+                <Label Text="Lista de tarefas para o usuario." />
+
+                <SearchBar TextChanged="Pesquisar" CancelButtonColor="Red" HorizontalTextAlignment="Center" Placeholder="pesquise uma tarefa." >
+                    <!--  SearchButtonPressed="PesquisarBotao"  para que só mude depois de clicar no botao. sendo que precisa usar EventArgs normal-->
+                </SearchBar>
+
+                <StackLayout x:Name="resultado">
+                    
+                </StackLayout>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -18,7 +18,7 @@ namespace DAAD.Pages.CarouselPages
         }
         private void MudarPagina(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new Navigation.Lobby());
+            App.Current.MainPage = new NavigationPage(new Master.Principal());
             
         }
         private void MudarPaginaTabbed(object sender, EventArgs args)

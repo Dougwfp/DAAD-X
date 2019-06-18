@@ -31,5 +31,10 @@ namespace DAAD.Pages.Master
             Picker obj = (Picker)sender;
             local.Text = obj.SelectedItem.ToString();
         }
+
+        private void MudarDistancia(object sender, ValueChangedEventArgs args)
+        {
+            dist.Text = "a distancia maxima esta " + args.NewValue.ToString() + "KM";
+        }
     }
 }

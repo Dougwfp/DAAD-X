@@ -21,6 +21,8 @@
             <Entry Placeholder="Ex: 99 999999999" Keyboard="Telephone"/>
             <Label Text="Nascimento" x:Name="data"/>
             <DatePicker Format="dd/MM/yyyy" MinimumDate="01/01/1900" Date="01/01/1950"/>
+            <Label Text="quantidade" x:Name="quant"/>
+            <Stepper Minimum="1" Maximum="10" Increment="1" Value="1" ValueChanged="MudarQuanti"/>
 
             <Label Text="Formularios para criar/editar/excluir a conta."
                 VerticalOptions="CenterAndExpand" 

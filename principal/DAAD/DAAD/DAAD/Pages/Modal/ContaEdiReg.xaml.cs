@@ -20,6 +20,9 @@ namespace DAAD.Pages.Modal
         {
             Navigation.PopModalAsync();
         }
-        
+        private void MudarQuanti(object sender, ValueChangedEventArgs args)
+        {
+            quant.Text = "quantidade é " + args.NewValue.ToString();
+        }
     }
 }

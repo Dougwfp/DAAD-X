@@ -7,6 +7,8 @@
         <ScrollView Orientation="Vertical">
             <StackLayout HeightRequest="1000">
                 <Button Text="Sala de Chat" Clicked="NavSala"/>
+                <Label Text="Modo Alerta Desativado." x:Name="lAlert"/>
+                <Switch IsToggled="False" Toggled="MudarAlerta"/>
                 <Label Text="Lista de usuarios para entrar em chat."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

@@ -8,6 +8,15 @@
             <StackLayout HeightRequest="1000">
                 <Button Text="GoogleMaps" Clicked="NavGoogleMaps"/>
                 <Button Text="CEP" Clicked="NavCEP"/>
+
+                <Label Text="Distancia maxima" x:Name="dist"/>
+                <Slider
+                    Minimum="0"
+                    Maximum="50"
+                    Value="5"
+                    ValueChanged="MudarDistancia"
+                    />
+                
                 <Label Text="lista de locais" x:Name="local"/>
                 <Picker Title="Postos" SelectedIndexChanged="RotaGoogleMaps">
                     <Picker.Items>
