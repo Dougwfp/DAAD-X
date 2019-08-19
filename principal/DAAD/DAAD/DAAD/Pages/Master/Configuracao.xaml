@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DAAD.Pages.Master.Configuracao"
+             Title="Configuraçâo">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Seção 1">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="frequencia de 0 a 7"/>
+                                <Slider Margin="5" HorizontalOptions="FillAndExpand" Minimum="0" Maximum="7"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <SwitchCell Text="Permição 1-1" On="False"/>
+                        <SwitchCell Text="Permição 1-2" On="False"/>
+                    </TableSection>
+                    <TableSection Title="Seção 2">
+                        <SwitchCell Text="Permição 2-1" On="False"/>
+                        <SwitchCell Text="Permição 2-2" On="False"/>
+                    </TableSection>
+                    <TableSection Title="Seção 3">
+                        <SwitchCell Text="Criptografar" On="True"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

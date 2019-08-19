@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DAAD.Service.Model;
 
 namespace DAAD.Pages.Master
 {
@@ -16,10 +17,23 @@ namespace DAAD.Pages.Master
 		{
 			InitializeComponent ();
 
+
+            //List<Tabela> listaTabela = Banco.GetListaTabela; //este é um exemplo de como receberia de um banco de dados comum.
+            List<Usuario> usuLista = new List<Usuario>();
+
+            usuLista.Add(new Usuario { nome = "aaaaaaa", sexo = "M", complemento = "depoimento exemplo 1" });
+            usuLista.Add(new Usuario { nome = "bbbbbbb", sexo = "M", complemento = "depoimento exemplo 2" });
+            usuLista.Add(new Usuario { nome = "ccccccc", sexo = "M", complemento = "depoimento exemplo 3" });
+            usuLista.Add(new Usuario { nome = "ddddddd", sexo = "F", complemento = "depoimento exemplo 4" });
+
+            ListaDepo.ItemsSource = usuLista;
+
             mde.Completed += delegate (object sender, EventArgs args)
             {
                 mdl.Text = mde.Text;
             };
+
+
 
             /*mde.TextChanged += delegate (object sender, TextChangedEventArgs args)
             {

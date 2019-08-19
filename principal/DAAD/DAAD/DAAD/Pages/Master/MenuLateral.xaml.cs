@@ -52,6 +52,11 @@ namespace DAAD.Pages.Master
             Detail = new NavigationPage(new Depoimentos());
             IsPresented = false;
         }
+        private void MenuConfig(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Configuracao());
+            IsPresented = false;
+        }
         private void MenuCarregando(object sender, EventArgs args)
         {
             Detail = new NavigationPage(new Service.Controller.Carregando());

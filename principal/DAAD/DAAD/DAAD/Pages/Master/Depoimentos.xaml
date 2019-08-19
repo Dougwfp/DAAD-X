@@ -1,16 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DAAD.Pages.Master.Depoimentos">
+             x:Class="DAAD.Pages.Master.Depoimentos"
+             xmlns:mod="clr-namespace:DAAD.Service.Model">
+    
     <ContentPage.Content>
         <StackLayout>
             <Editor x:Name="mde" HeightRequest="200" Placeholder="Digite seu depoimento"/>
             <Label Text="aqui vai entrar o meu depoimento." x:Name="mdl" LineBreakMode="WordWrap"/>
-            
-            
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="Black"/>
             <Label Text="Lista de depoimentos"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <!--<BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="Black"/>
+            <ListView HasUnevenRows = "true">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type mod:Usuario}">
+                        <mod:Usuario nome="Fulano" sexo="M" complemento="Aplicativo legal"/>
+                        <mod:Usuario nome="Fulana" sexo="F" complemento="aaaaaaaaaaaaaaaaaa"/>
+                        <mod:Usuario nome="Siclano" sexo="M" complemento="testando"/>
+                        <mod:Usuario nome="Maria" sexo="F" complemento="Pq krl eu coloquei mais de 3 pessoas??"/>
+                        <mod:Usuario nome="Joao" sexo="M" complemento="preciso realmente aprender a desenvolver essa coisa"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding nome}"/>
+                                    <Label Text=" - "/>
+                                    <Label Text="{Binding sexo}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text=" Depoimento : "/>
+                                    <Label Text="{Binding complemento}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="Black"/>
+            <ListView x:Name="ListaDepo" HasUnevenRows = "true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding nome}"/>
+                                    <Label Text=" - "/>
+                                    <Label Text="{Binding sexo}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text=" Depoimento : "/>
+                                    <Label Text="{Binding complemento}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

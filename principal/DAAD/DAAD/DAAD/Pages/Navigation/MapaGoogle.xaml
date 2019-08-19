@@ -4,9 +4,21 @@
              x:Class="DAAD.Pages.Navigation.MapaGoogle">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Exibição do google maps dos postos mais proximos do gps do usuario."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="EnderecoSite" HorizontalOptions="FillAndExpand"/>
+                <Button Text="OK" Clicked="GoPagina"/>
+                <Button Text="Voltar" Clicked="GoVoltar"/>
+                <Button Text="Próximo" Clicked="GoProximo"/>
+            </StackLayout>
+            <WebView x:Name="Navegador"
+                     Source="https://www.google.com.br/maps/@-23.9295581,-46.3912693,15z"
+                     Navigating="ActionCarregando"
+                     Navigated="ActionCarregado"
+                                                                   
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand">
+            </WebView>
+            <Label x:Name="lblStatus"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
