@@ -17,7 +17,12 @@
                     <Button Text="Depoimentos" BackgroundColor="Transparent" Clicked="MenuDepo" />
                     <Button Text="Configuração" BackgroundColor="Transparent" Clicked="MenuConfig" />
                     <Button Text="Carregando" BackgroundColor="Transparent" Clicked="MenuCarregando" />
-                    
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton x:Name="facebook" Source="facebook.png" HeightRequest="50" WidthRequest="50" Clicked="GoToFacebook" Margin="10"/>
+                        <ImageButton x:Name="instagram" Source="instagram.png" HeightRequest="50" WidthRequest="50" Clicked="GoToInstagram" Margin="10"/>
+                        <ImageButton x:Name="twitter" Source="twitter.png" HeightRequest="50" WidthRequest="50" Clicked="GoToTwitter" Margin="10"/>
+                        <ImageButton x:Name="youtube" Source="youtube.png" HeightRequest="50" WidthRequest="50" Clicked="GoToYoutube" Margin="10"/>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </ContentPage>

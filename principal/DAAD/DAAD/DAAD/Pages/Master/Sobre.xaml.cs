@@ -16,5 +16,22 @@ namespace DAAD.Pages.Master
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void GoToFacebook(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToInstagram(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToTwitter(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToYoutube(object sender, EventArgs args)
+        {
+
+        }
+    }
 }

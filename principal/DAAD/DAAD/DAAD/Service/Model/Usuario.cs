@@ -18,16 +18,9 @@ namespace DAAD.Service.Model
         public DateTime logadopelaultimavez { get; set; }
         public DateTime deslogadopelaultimavez { get; set; }
         public string cep { get; set; }
-        public string logradouro { get; set; }
-        public string complemento { get; set; }
-        public string bairro { get; set; }
-        public string localidade { get; set; }
-        public string uf { get; set; }
-        public string unidade { get; set; }
-        public string ibge { get; set; }
-        public string gia { get; set; }
         public string gps { get; set; }
         public string sexo { get; set; }
         public string cargo { get; set; }
+        public string depoimento { get; set; }//criar o modelo proprio
     }
 }

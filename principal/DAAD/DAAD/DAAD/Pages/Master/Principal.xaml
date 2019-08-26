@@ -20,7 +20,7 @@
                 <StackLayout Margin="5, 10, 5, 10" Padding="10" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Button Text="Sobre" Clicked="IrParaSobre"/>
                     <Button Text="CEP" Clicked="IrParaCep"/>
-                    <Button Text="Modal" Clicked="ChamarModal"/>
+                    <Button Text="Registrar" Clicked="ChamarModal"/>
                 </StackLayout>
 
             </StackLayout>

@@ -8,7 +8,7 @@
             <Label Text="Informaçoes da conta do usuario"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Modal" Clicked="ModalEdiReg"/>
+            <Button Text="EditarConta" Clicked="ModalEdiReg"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

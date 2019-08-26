@@ -5,9 +5,16 @@
              Title="Sobre">
     <ContentPage.Content>
         <StackLayout>
+            
             <Label Text="Aqui ficam varias imformaçoes importantes sobre o projeto."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" >
+                <ImageButton x:Name="facebook" Source="facebook.png" HeightRequest="50" WidthRequest="50" Clicked="GoToFacebook" Margin="10"/>
+                <ImageButton x:Name="instagram" Source="instagram.png" HeightRequest="50" WidthRequest="50" Clicked="GoToInstagram" Margin="10"/>
+                <ImageButton x:Name="twitter" Source="twitter.png" HeightRequest="50" WidthRequest="50" Clicked="GoToTwitter" Margin="10"/>
+                <ImageButton x:Name="youtube" Source="youtube.png" HeightRequest="50" WidthRequest="50" Clicked="GoToYoutube" Margin="10"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

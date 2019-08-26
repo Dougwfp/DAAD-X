@@ -62,6 +62,21 @@ namespace DAAD.Pages.Master
             Detail = new NavigationPage(new Service.Controller.Carregando());
             IsPresented = false;
         }
-        
+        private void GoToFacebook(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToInstagram(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToTwitter(object sender, EventArgs args)
+        {
+
+        }
+        private void GoToYoutube(object sender, EventArgs args)
+        {
+
+        }
     }
 }

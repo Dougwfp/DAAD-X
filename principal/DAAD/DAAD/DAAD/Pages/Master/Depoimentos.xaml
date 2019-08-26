@@ -54,7 +54,7 @@
                                 </StackLayout>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text=" Depoimento : "/>
-                                    <Label Text="{Binding complemento}"/>
+                                    <Label Text="{Binding depoimento}"/>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

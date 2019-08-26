@@ -30,10 +30,10 @@ namespace DAAD.Pages.Navigation
             {
                 try
                 {
-                    Usuario usu = ViaCEPServico.BuscarEnderecoViaCEP(cep);
-                    if (usu != null)
+                    Endereco ende = ViaCEPServico.BuscarEnderecoViaCEP(cep);
+                    if (ende != null)
                     {
-                        lab.Text = string.Format("Endereço: {0}, {1}, {2}, {3}, {4}", usu.uf, usu.localidade, usu.bairro, usu.logradouro, usu.complemento, usu.cep);
+                        lab.Text = string.Format("Endereço: {0}, {1}, {2}, {3}, {4}", ende.uf, ende.localidade, ende.bairro, ende.logradouro, ende.complemento, ende.cep);
 
                     }
                     else
